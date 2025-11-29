@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /app
 
 # Godotサーバーバイナリをコピー
-COPY builds/linux/server.x86_64 /app/server
+COPY server.x86_64 /app/server
 
 # 実行権限を付与
 RUN chmod +x /app/server
